@@ -1,13 +1,16 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { Text, ScrollView } from 'react-native'
+import { View, ScrollView, Text } from 'react-native'
 import './index.styl'
-import { Content } from '@startupjs/ui'
+import Header from '../../../components/Header'
+import Main from '../../../components/Main'
+import Footer from '../../../components/Footer'
 
-export default observer(function PAbout () {
+export default observer(function PAbout() {
   return pug`
     ScrollView.root
-      Content
-        Text.text Built on StartupJS
+      View.container
+        Header
+        Footer
   `
 })
