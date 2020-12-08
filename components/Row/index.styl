@@ -1,8 +1,11 @@
 .row
   flex-direction row
-  margin-top 2u
+  margin-bottom 1u
+  &.last
+    margin-bottom 0
   +wide()
-    margin-top 3u
+    &.last
+      margin-bottom 0
 
 .title
   font-size 2u
@@ -17,8 +20,7 @@
 
 .text
   font-size 2u
-  font-weight 300
   line-height 3u
+  color inherit
+  // font-weight 300
   color rgba(255, 255, 255, 0.65)
-  +wide()
-    font-size 2.5u

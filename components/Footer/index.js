@@ -4,6 +4,8 @@ import './index.styl'
 
 import Section from '../Section'
 import Button from '../Button'
+import ContactInfo from '../ContactInfo'
+import SocialInfo from '../SocialInfo'
 
 const Footer = () => {
   const handleClick = () => {
@@ -19,6 +21,8 @@ const Footer = () => {
           Button(title='Learn more' onPress=handleClick info)
         Section
           Text.title Etiam feugiat
+          ContactInfo
+          SocialInfo
   `
 }
 

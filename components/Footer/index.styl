@@ -1,8 +1,15 @@
 .footer
   padding 5u 2u 1u
+  +tablet()
+    padding 6u 4u 2u
+  +desktop()
+    padding 8u 6u 4u
+  +wide()
+    padding 8u 8u 4u
 
 .container
-  +tablet()
+  display flex
+  +desktop()
     flex-direction row
     align-items flex-start
 
@@ -15,6 +22,7 @@
 
 .txt
   font-size 2u
+  line-height 3u
   color inherit
   margin-bottom 4u
   // font-weight 100
