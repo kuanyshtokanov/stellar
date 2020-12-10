@@ -1,0 +1,108 @@
+.first
+  align-items center
+  margin-bottom 3u
+  +tablet()
+    margin-bottom 4u
+
+.statistic
+  width 100%
+  margin-bottom 2u
+  +tablet()
+    flex-direction row
+
+.statItem
+  padding 3u 5u
+  justify-content center
+  align-items center
+  width 100%
+  &.head
+    border-radius 1u 1u 0 0
+  &.tail
+    border-radius 0 0 1u 1u
+  +tablet()
+    padding 4u
+    width: 20%
+    &.head
+      border-radius 1u 0 0 1u
+    &.tail
+      border-radius 0 1u 1u 0
+
+.icon
+  justify-content center
+  align-items center
+  width 100%
+  margin-bottom 2u
+  // height 100%
+
+.title
+  margin-bottom 2u
+  font-size 3u
+  font-weight 100
+  line-height 4u
+  color #636363
+
+.subtitle, .txt
+  color #ffffff
+
+.subtitle
+  font-size 2.5u
+
+.line
+  background-color #935d8c
+  height 2px
+  width 10u
+  margin-bottom 3u
+  +tablet()
+    width 13u
+  +wide()
+    width 18u
+
+.txt
+  font-size 2u
+  line-height 3u
+  text-align center
+  // margin-bottom 3u
+  // +tablet()
+  //   font-size 2.5u
+  //   line-height 4u
+
+.border
+  height 24u
+  width 24u
+  border-radius 100%
+  border 1px solid #dddddd
+  align-items center
+  justify-content center
+  +tablet()
+    height 34u
+    width 34u
+
+.img
+  height 22u
+  width 22u
+  border-radius 100%
+  // padding 1u
+  +tablet()
+    height 32u
+    width 32u
+
+.infoText
+  color #636363
+  text-align justify
+  font-size 2u
+  line-height 3u
+  font-weight 300
+  margin-bottom 3u
+  +tablet()
+    column-count 2
+    column-gap 4u
+
+.btn
+  width 100%
+  
+  +tablet()
+    width auto
+    align-items center
+    // max-width fit-content
+  +desktop()
+    margin-top 5u

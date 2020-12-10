@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faTwitter, faFacebook, faInstagram, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import './index.styl'
 
 import Link from '../Link'

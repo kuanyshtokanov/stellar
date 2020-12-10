@@ -10,7 +10,8 @@
   &.info
     border 1px solid rgba(255,255,255,0.35)
   +wide()
-    width 30%
+    width auto
+    padding 0 2u
     
 .txt
   color: #636363
@@ -18,11 +19,9 @@
   height 5u
   line-height 5u
   font-weight 300
-  &.action
+  &.action, &.info
     color white
-  &.info
-    color white
-  +wide()
+  // +wide()
     // font-size 2.5u
     // height 7u
     // line-height 7u

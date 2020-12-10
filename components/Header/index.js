@@ -7,6 +7,7 @@ import Link from '../Link'
 
 const Header = () => {
   const base = BASE_URL
+
   return pug`
     View.header
       View.logo

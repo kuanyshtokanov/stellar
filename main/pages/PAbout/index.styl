@@ -6,7 +6,10 @@ $color = #C1B7DF
 
 .container
   margin 0 auto
-  max-width: calc(100% - 3u);
+  width 100%
+  +tablet()
+    width 128u
+    max-width: calc(100% - 4u);
 
 .title
   font-size 5.5u

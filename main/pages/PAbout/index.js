@@ -11,6 +11,7 @@ export default observer(function PAbout() {
     ScrollView.root
       View.container
         Header
+        Main
         Footer
   `
 })

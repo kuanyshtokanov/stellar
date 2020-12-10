@@ -2,9 +2,9 @@ import React from 'react'
 import { View } from 'react-native'
 import './index.styl'
 
-const Section = ({ children, center }) => {
+const Section = ({ children, first, intro }) => {
   return pug`
-    View.section(styleName=[{ center }]) #{children}
+    View.section(styleName=[{ first, intro }]) #{children}
   `
 }
 
