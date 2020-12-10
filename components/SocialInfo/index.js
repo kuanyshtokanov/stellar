@@ -1,32 +1,31 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import './index.styl'
 
 import Link from '../Link'
 
 const SocialInfo = () => {
-
   const socialData = [
     {
       iconSrc: ['fab', 'twitter'],
-      url: 'https://twitter.com/',
+      url: 'https://twitter.com/'
     },
     {
       iconSrc: ['fab', 'facebook'],
-      url: 'https://www.facebook.com/',
+      url: 'https://www.facebook.com/'
     },
     {
       iconSrc: ['fab', 'instagram'],
-      url: 'https://www.instagram.com/',
+      url: 'https://www.instagram.com/'
     },
     {
       iconSrc: ['fab', 'github'],
-      url: 'https://github.com/',
+      url: 'https://github.com/'
     },
     {
       iconSrc: ['fab', 'dribbble'],
-      url: 'https://dribbble.com/',
+      url: 'https://dribbble.com/'
     }
   ]
 

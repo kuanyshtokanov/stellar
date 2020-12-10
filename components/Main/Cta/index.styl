@@ -1,0 +1,56 @@
+.first
+  align-items center
+  margin-bottom 3u
+  +tablet()
+    margin-bottom 4u
+
+.title
+  margin-bottom 2u
+  font-size 3u
+  font-weight 100
+  line-height 4u
+  color #636363
+
+.line
+  background-color #935d8c
+  height 2px
+  width 10u
+  margin-bottom 3u
+  +tablet()
+    width 13u
+  +wide()
+    width 18u
+
+.txt
+  font-size 2u
+  line-height 3u
+  text-align center
+  color #636363
+  // margin-bottom 3u
+  // +tablet()
+  //   font-size 2.5u
+  //   line-height 4u
+
+
+.buttons
+  width 100%
+  justify-content center
+  +tablet()
+    flex-direction row
+
+.button
+  &.last
+    margin-top 2u
+    +tablet()
+      margin-top 0
+      margin-left 2u
+  +tablet()
+    margin-top 0
+    width auto
+
+  // +tablet()
+  //   width auto
+  //   align-items center
+  //   // max-width fit-content
+  // +desktop()
+    // margin-top 5u

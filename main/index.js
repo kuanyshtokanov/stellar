@@ -17,7 +17,7 @@ library.add(
   faCodeBranch,
   faFolderOpen,
   faSignal,
-  faLaptop,
+  faLaptop
 )
 
 export { default as Layout } from './Layout'

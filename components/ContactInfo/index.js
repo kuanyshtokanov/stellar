@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import './index.styl'
 
 import Row from '../Row'
+import Link from '../Link'
 
 const ContactInfo = () => {
-
   return pug`
     View.container
       Row(title='Address')
@@ -13,7 +13,8 @@ const ContactInfo = () => {
       Row(title='Phone')
         Text (000) 000-0000 x 0000
       Row(title='Email' last)
-        Text information@untitled.tld
+        Link(url='#')
+          Text.link information@untitled.tld
   `
 }
 

@@ -1,18 +1,27 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View } from 'react-native'
 import './index.styl'
 
+import Section from './Section'
+import Nav from './Navigation'
 import Intro from './Intro'
 import First from './First'
 import Second from './Second'
+import Cta from './Cta'
 
 const Main = () => {
-
   return pug`
     View.main
-      Intro
-      First
-      Second
+      Section(navBar)
+        Nav
+      Section(intro)  
+        Intro
+      Section
+        First
+      Section
+        Second
+      Section
+        Cta
   `
 }
 

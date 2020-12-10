@@ -1,11 +1,12 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import './index.styl'
 
 import Section from '../Section'
 import Button from '../Button'
 import ContactInfo from '../ContactInfo'
 import SocialInfo from '../SocialInfo'
+import Link from '../Link'
 
 const Footer = () => {
   const handleClick = () => {
@@ -23,6 +24,13 @@ const Footer = () => {
           Text.title Etiam feugiat
           ContactInfo
           SocialInfo
+          View.copyright
+            Text.copyright © Untitled. Design: 
+              Link(url='https://twitter.com/ajlkn')
+                Text HTML5 UP. 
+              Text Demo Images: 
+              Link(url='https://twitter.com/ajlkn')
+                Text Unsplash.
   `
 }
 
