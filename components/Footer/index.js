@@ -19,12 +19,13 @@ const Footer = () => {
         Section
           Text.title Aliquam sed mauris
           Text.txt Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
-          Button(title='Learn more' onPress=handleClick info)
+          View.button
+            Button(title='Learn more' onPress=handleClick info)
         Section
           Text.title Etiam feugiat
           ContactInfo
           SocialInfo
-          View.copyright
+          View.last
             Text.copyright © Untitled. Design: 
               Link(url='https://twitter.com/ajlkn')
                 Text HTML5 UP. 
