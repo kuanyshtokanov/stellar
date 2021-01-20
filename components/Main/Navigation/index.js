@@ -1,21 +1,24 @@
-import React, { useState } from 'react'
-import { View } from 'react-native'
+import React from 'react'
+import { View, Text } from 'react-native'
 import './index.styl'
 
 import Link from '../../Link'
 
 const Nav = () => {
-
   return pug`
     View.nav
       View.link.active
-        Link(url='#') Introduction
+        Link.txt(url='#')
+          Text.txt Introduction
       View.link
-        Link(url='#') First section
+        Link(url='#')
+        Text.txt First section
       View.link
-        Link(url='#') Second section
+        Link(url='#')
+        Text.txt Second section
       View.link
-        Link(url='#') Get Started
+        Link(url='#')
+        Text.txt Get Started
   `
 }
 

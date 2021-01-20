@@ -4,12 +4,10 @@
   +tablet()
     margin-bottom 4u
   +desktop()
-    margin-bottom 0
+    margin-bottom 2u
     // margin-left 8u
 
 .list
-  // flex-direction row
-  flex-wrap wrap
   justify-content center
   width 100%
   margin-bottom 3u
@@ -17,15 +15,13 @@
     justify-content center
     align-items center
     flex-flow row wrap
-    // margin-left -2u
-    // margin-right -2u
+  +desktop()
+    flex-direction row
   +wide()
-    justify-content space-between
     margin-left 0
     margin-right 0
 
 .listItem
-  width 100%
   margin-left 0
   align-items center
   margin-top 5u
@@ -33,13 +29,15 @@
     margin-top 0
   &.tail
     +tablet()
+      margin-top 4u
+    +desktop()
       margin-top 0
   +tablet()
     margin-top 0
-    padding 0
-    width: calc(33% - 4u)
+    padding 0 2u
+    width calc(50% - 6u)
   +desktop()
-    width calc(33%-4u)
+    width 33%
 
 .outerIcon
   width 16u
