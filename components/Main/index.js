@@ -14,7 +14,7 @@ const Main = () => {
     View.main
       Section(navBar)
         Nav
-      Section(intro first)  
+      Section(intro first)
         Intro
       Section
         First

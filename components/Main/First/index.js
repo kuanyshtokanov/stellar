@@ -41,8 +41,8 @@ const First = () => {
           View.outerIcon
             View.icon
               FontAwesomeIcon(icon=item.iconSrc size=65 color=item.color)
-          Text.subtitle #{item.title}
-          Text.txt #{item.text}
+          Text.subtitle=item.title
+          Text.txt=item.text
     View.btn
       Button.button(title='Learn more' onPress=handleClick)
   `

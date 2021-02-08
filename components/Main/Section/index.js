@@ -4,7 +4,8 @@ import './index.styl'
 
 const Section = ({ children, first, intro, navBar }) => {
   return pug`
-    View.section(styleName=[{ first, intro, navBar }]) #{children}
+    View.section(styleName=[{ first, intro, navBar }])
+      = children
   `
 }
 

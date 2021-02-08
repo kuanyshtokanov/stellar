@@ -12,13 +12,13 @@ const Nav = () => {
           Text.txt Introduction
       View.link
         Link(url='#')
-        Text.txt First section
+          Text.txt First section
       View.link
         Link(url='#')
-        Text.txt Second section
+          Text.txt Second section
       View.link
         Link(url='#')
-        Text.txt Get Started
+          Text.txt Get Started
   `
 }
 

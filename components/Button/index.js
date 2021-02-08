@@ -6,7 +6,7 @@ const Button = ({ onPress, title, info, action }) => {
   return pug`
     TouchableOpacity(onPress=onPress)
       View.btn(styleName=[{ info, action }])
-        Text.txt(styleName=[{ info, action }]) #{title}
+        Text.txt(styleName=[{ info, action }])=title
   `
 }
 
