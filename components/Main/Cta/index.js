@@ -30,7 +30,6 @@ const Second = () => {
           title='Learn more'
           onPress=handleClick
         )
-        
   `
 }
 

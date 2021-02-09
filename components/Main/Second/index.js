@@ -47,7 +47,7 @@ const Second = () => {
     View.first
       Text.title Ipsum consequat
       View.line
-      Text.txt(style={color: '#636363'}) Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
+      Text.txt Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
     View.statistic
       each item, index in items
         View.statItem(

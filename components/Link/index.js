@@ -14,7 +14,7 @@ const Link = ({ children, url, active }) => {
   }
 
   return pug`
-    TouchableOpacity(onPress=handleClick styleName=[{active}]) #{children}
+    TouchableOpacity(onPress=handleClick styleName={active})=children
   `
 }
 
