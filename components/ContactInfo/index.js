@@ -1,11 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Linking } from 'react-native'
 import './index.styl'
 
 import Row from '../Row'
-import Link from '../Link'
 
 const ContactInfo = () => {
+  const openSite = () => {
+    Linking.openURL('mailto:information@untitled.tld')
+  }
+
   return pug`
     View.container
       Row(title='Address')
@@ -13,8 +16,9 @@ const ContactInfo = () => {
       Row(title='Phone')
         Text (000) 000-0000 x 0000
       Row(title='Email' last)
-        Link(url='#')
-          Text.link information@untitled.tld
+        Text
+          View.link
+            Text(onPress=openSite).txt information@untitled.tld
   `
 }
 

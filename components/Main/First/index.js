@@ -33,7 +33,7 @@ const First = () => {
 
   return pug`
     View.first
-      Text.title Ipsum sed adipiscing
+      Text.title Magna veroeros
       View.line
     View.list
       each item, index in items

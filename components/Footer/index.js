@@ -1,16 +1,19 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Linking } from 'react-native'
 import './index.styl'
 
 import Section from '../Section'
 import Button from '../Button'
 import ContactInfo from '../ContactInfo'
 import SocialInfo from '../SocialInfo'
-import Link from '../Link'
 
 const Footer = () => {
   const handleClick = () => {
     console.log('Learn More pressed')
+  }
+
+  const openTwitter = () => {
+    Linking.openURL('https://twitter.com/ajlkn')
   }
 
   return pug`
@@ -26,12 +29,13 @@ const Footer = () => {
           ContactInfo
           SocialInfo
           View.last
-            Text.copyright © Untitled. Design: 
-              Link(url='https://twitter.com/ajlkn')
-                Text HTML5 UP. 
-              Text Demo Images: 
-              Link(url='https://twitter.com/ajlkn')
-                Text Unsplash.
+            Text.lastText
+              Text.copyright © Untitled. Design: 
+              View.link
+                Text(onPress=openTwitter).linkTxt HTML5 UP.
+              Text.copyright   Demo Images: 
+              View.link
+                Text(onPress=openTwitter).linkTxt Unsplash.
   `
 }
 
