@@ -1,0 +1,55 @@
+.footer
+  padding 5u 2u 1u
+  +tablet()
+    padding 6u 4u 2u
+  +desktop()
+    padding 8u 6u 4u
+  +wide()
+    padding 8u 8u 4u
+
+.container
+  +desktop()
+    flex-direction row
+    align-items flex-start
+
+.title
+  font-size 3u
+  font-weight 300
+  color white
+  line-height 4u
+  margin-bottom 1u
+
+.txt
+  font-size 2u
+  line-height 3u
+  color white
+  margin-bottom 4u
+
+.button
+  +tablet()
+    width auto
+    align-items flex-start
+
+.last
+  margin-top 2u
+
+.lastText
+  justify-content center
+
+.copyright
+  text-align left
+  font-size 1.5u
+  color rgba(255, 255, 255, 0.65)
+  margin-top 3u
+  +tablet()
+    text-align center
+
+.link
+  border-bottom-width 1
+  border-bottom-color white
+  border-style dashed
+
+.linkTxt
+  font-size 1.5u
+  text-decoration none
+  color rgba(255, 255, 255, 0.65)

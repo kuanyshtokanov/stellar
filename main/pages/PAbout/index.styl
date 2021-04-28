@@ -1,10 +1,21 @@
 $color = #C1B7DF
 
 .root
-  padding 2u 0
+  padding 0
   flex 1
 
-.text
-  color $color
-  font-weight bold
-  font-size 20px
+.container
+  margin 0 auto
+  width 100%
+  padding-left 2u
+  padding-right 2u
+  +tablet()
+    width 128u
+    max-width: calc(100% - 4u);
+
+.title
+  font-size 5.5u
+  font-weight 300
+  color white
+  line-height 6u
+  margin-top 3u

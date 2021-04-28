@@ -1,0 +1,25 @@
+.row
+  flex-direction row
+  margin-bottom 1u
+  &.last
+    margin-bottom 0
+  +wide()
+    &.last
+      margin-bottom 0
+
+.title
+  font-size 2u
+  line-height 3u
+  color white
+  width 11u
+  flex-shrink 0
+  // flex-grow 0
+  +wide()
+    width 15u
+    font-size 2.5u
+
+.text
+  font-size 2u
+  line-height 3u
+  color inherit
+  color rgba(255, 255, 255, 0.65)

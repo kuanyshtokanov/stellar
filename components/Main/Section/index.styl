@@ -1,0 +1,19 @@
+.section
+  padding 4u 3u 4u
+  border-top solid 1px #dddddd
+  &.first
+    border none
+  &.navBar
+    border-radius 1u 1u 0 0
+    border-top 0
+    background-color #f7f7f7
+    padding 2u
+    display none
+    +tablet()
+      display flex
+  +tablet()
+     padding 6u 4u 6u
+  +desktop()
+    padding 8u 6u 8u
+    &.intro
+      flex-direction row-reverse

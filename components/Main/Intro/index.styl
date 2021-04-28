@@ -1,0 +1,82 @@
+.container
+  align-items center
+  padding 6u 3u 2u
+  width 100%
+  +tablet()
+     padding 8u 6u 4u
+  +desktop()
+    padding 8u 8u 4u
+    flex-direction row-reverse
+
+.right
+  align-items center
+  margin-bottom 3u
+  +tablet()
+    margin-bottom 4u
+  +desktop()
+    order 1
+    margin-bottom 0
+    margin-left 8u
+
+.left
+  align-items center
+  // flex 1
+  // text-align center
+  +desktop()
+    order 2
+    flex-shrink 1
+    margin-bottom 0
+    text-align left
+    align-items flex-start
+
+.title
+  margin-bottom 1.5u
+  font-size 3u
+  font-weight 100
+  line-height 4u
+  color #636363
+
+.line
+  background-color #935d8c
+  height 2px
+  width 10u
+  margin-bottom 3u
+  +tablet()
+    width 13u
+  +wide()
+    width 18u
+
+.txt
+  color #636363
+  margin-bottom 4u
+  font-size 2u
+  text-align center
+  +desktop()
+    font-size 2.5u
+    text-align left
+  
+.border
+  height 24u
+  width 24u
+  border-radius 20u
+  border 1px solid #dddddd
+  align-items center
+  justify-content center
+  +tablet()
+    height 34u
+    width 34u
+
+.img
+  height 22u
+  width 22u
+  border-radius 20u
+  +tablet()
+    height 32u
+    width 32u
+
+.btn
+  width 100%
+  +tablet()
+    width auto
+  +desktop()
+    margin-top 5u
